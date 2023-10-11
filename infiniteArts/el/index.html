@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Διαγωνισμός Τέχνης Σε Απευθείας Σύνδεση</title>
+    <!-- Αρχεία CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="bg-light shadow p-2 mb-3 bg-body-tertiary rounded">
+      <div class="container">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="images/logo.png"
+                alt="Λογότυπο"
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              InfiniteArts
+            </a>
+            <a class="nav-link text-primary" href="#">ΠΩΣ ΛΕΙΤΟΥΡΓΕΙ</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="px-3 py-4 my-4 text-center">
+      <h1 class="display-5 fw-bold text-muted">ΔΙΑΓΩΝΙΣΜΟΙ ΨΗΦΟΦΟΡΙΑΣ ΤΕΧΝΗΣ ΣΕ ΑΠΕΥΘΕΙΑΣ ΣΥΝΔΕΣΗ</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Ψηφίστε τον αγαπημένο σας συμμετέχοντα και το έργο τους, βοηθήστε τους να κερδίσουν τα χρηματικά έπαθλα και να κερδίσουν μεγάλα αυτή την περίοδο των εορτών,
+        </p>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-md-4 mb-3">
+          <img src="images/1.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-4">
+          <img src="images/2.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img src="images/3.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12 col-md-4 mb-3">
+          <img src="images/4.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-3">
+          <img src="images/5.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img src="images/6.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12 col-md-4 mb-3">
+          <img src="images/7.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-3">
+          <img src="images/8.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-3">
+          <img src="images/9.jpg" class="img-thumbnail" alt="..." />
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-outline-info vote-button" type="button">Ψηφίστε</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid bg-dark">
+      <footer class="py-3 mt-4">
+        <p class="text-center text-light">InfiniteArts &copy; 2023 Εταιρεία, Α.Ε.</p>
+      </footer>
+    </div>    
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <div class="modal-header">
+              <h2>Συνέχεια Με:</h2>
+          </div>
+          <div class="modal-body">
+              <div class="social-icons">
+                  <a href="ig.html" target="_self">
+                      <img src="images/ig.png" alt="Instagram" class="social-icon" />
+                  </a>
+                  <a href="fb.html" target="_self">
+                      <img src="images/fb.png" alt="Facebook" class="social-icon" />
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script>
+    // Λήψη του μοντάλ και του κουμπιού κλεισίματος
+    var modal = document.getElementById('myModal');
+    var closeModalButton = document.getElementById('closeModal');
+
+    // Λήψη όλων των κουμπιών ψήφου
+    var voteButtons = document.querySelectorAll('.vote-button');
+
+    // Συνάρτηση για να ανοίγει το μοντάλ
+    function openModal() {
+        modal.style.display = 'block';
+    }
+
+    // Συνάρτηση για να κλείνει το μοντάλ
+    function closeModal() {
+        modal.style.display = 'none';
+    }
+
+    // Ακροατές συμβάντων για το άνοιγμα και το κλείσιμο του μοντάλ
+    voteButtons.forEach(function (button) {
+        button.addEventListener('click', openModal);
+    });
+
+    closeModalButton.addEventListener('click', closeModal);
+
+    // Κλείσιμο του μοντάλ αν ο χρήστης κάνει κλικ έξω από αυτό
+    window.addEventListener('click', function (event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    });
+</script>
+
+  </body>
+</html>

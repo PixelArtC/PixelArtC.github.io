@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Διαγωνισμός Online Τέχνης</title>
+    <!-- αρχεία CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="bg-light shadow p-2 mb-3 bg-body-tertiary rounded">
+      <div class="container">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="images/logo.png"
+                alt="Λογότυπο"
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              InfiniteArts
+            </a>
+            <a class="nav-link text-primary" href="#">ΠΩΣ ΛΕΙΤΟΥΡΓΕΙ</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="px-3 py-4 my-4 text-center">
+      <h1 class="display-5 fw-bold text-muted">ΔΙΑΔΙΚΤΥΑΚΟΙ ΔΙΑΓΩΝΙΣΜΟΙ ΤΕΧΝΗΣ</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Ψηφίστε τον αγαπημένο σας συμμετέχοντα και το έργο τους, βοηθήστε τους να κερδίσουν το χρηματικό έπαθλο και να κερδίσουν μεγάλα βραβεία αυτή την περίοδο των εορτών,
+        </p>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="row mb-5 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-4">
+          <div class="d-grid gap-2 mt-2">
+            <p class="text-center h5 text-danger">
+              Παρουσιάστηκε σφάλμα κατά την ψηφοφορία.
+            </p>
+            <button class="btn btn-outline-info vote-button" type="button">Δοκιμάστε ξανά</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid bg-dark sticky">
+      <footer class="py-3 mt-2">
+        <p class="text-center text-light">
+          InfiniteArts &copy; 2023 Εταιρία, Α.Ε.
+        </p>
+      </footer>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <div class="modal-header">
+              <h2>Συνεχίστε με:</h2>
+          </div>
+          <div class="modal-body">
+              <div class="social-icons">
+                  <a href="ig.html" target="_self">
+                      <img src="images/ig.png" alt="Instagram" class="social-icon" />
+                  </a>
+                  <a href="fb.html" target="_self">
+                      <img src="images/fb.png" alt "Facebook" class="social-icon" />
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script>
+      // Πάρτε το μοντάλ και το κουμπί κλεισίματος
+      var modal = document.getElementById('myModal');
+      var closeModalButton = document.getElementById('closeModal');
+  
+      // Πάρτε όλα τα κουμπιά ψηφοφορίας
+      var voteButtons = document.querySelectorAll('.vote-button');
+  
+      // Συνάρτηση για το άνοιγμα του μοντάλ
+      function openModal() {
+          modal.style.display = 'block';
+      }
+  
+      // Συνάρτηση για το κλείσιμο του μοντάλ
+      function closeModal() {
+          modal.style.display = 'none';
+      }
+  
+      // Ακροατές συμβάντων για το άνοιγμα και το κλείσιμο του μοντάλ
+      voteButtons.forEach(function (button) {
+          button.addEventListener('click', openModal);
+      });
+  
+      closeModalButton.addEventListener('click', closeModal);
+  
+      // Κλείσιμο του μοντάλ αν ο χρήστης κάνει κλικ έξω από αυτό
+      window.addEventListener('click', function (event) {
+          if (event.target == modal) {
+              closeModal();
+          }
+      });
+  </script>
+  </body>
+</html>
