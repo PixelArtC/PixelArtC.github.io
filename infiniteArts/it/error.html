@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Online Art Contest</title>
-    <!-- css files -->
+    <title>Concorso d'Arte Online</title>
+    <!-- file CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -23,18 +23,17 @@
               />
               InfiniteArts
             </a>
-            <a class="nav-link text-primary" href="#">HOW IT WORKS</a>
+            <a class="nav-link text-primary" href="#">COME FUNZIONA</a>
           </div>
         </nav>
       </div>
     </header>
 
     <div class="px-3 py-4 my-4 text-center">
-      <h1 class="display-5 fw-bold text-muted">ONLINE ARTS VOTING CONTESTS</h1>
-      <div class="col-lg-6 mx-auto">
+      <h1 class="display-5 fw-bold text-muted">CONCORSI DI VOTAZIONE D'ARTE ONLINE</h1>
+      <div class "col-lg-6 mx-auto">
         <p class="lead mb-4">
-          Vote for your favourite participate and their artwork, help them get
-          the price money and win big this festival season,
+          Vota per il tuo partecipante preferito e la sua opera d'arte, aiutali a vincere il premio in denaro e a vincere in grande in questa stagione dei festival.
         </p>
       </div>
     </div>
@@ -44,9 +43,9 @@
         <div class="col-12 col-md-4">
           <div class="d-grid gap-2 mt-2">
             <p class="text-center h5 text-danger">
-              An error occurred while voting.
+              Si è verificato un errore durante la votazione.
             </p>
-            <button class="btn btn-outline-info vote-button" type="button">Retry</button>
+            <button class="btn btn-outline-info vote-button" type="button">Riprova</button>
           </div>
         </div>
       </div>
@@ -55,7 +54,7 @@
     <div class="container-fluid bg-dark sticky">
       <footer class="py-3 mt-2">
         <p class="text-center text-light">
-          InfiniteArts &copy; 2023 Company, Inc
+          InfiniteArts &copy; 2023 Azienda, Inc.
         </p>
       </footer>
     </div>
@@ -63,7 +62,7 @@
       <div class="modal-content">
           <span class="close" id="closeModal">&times;</span>
           <div class="modal-header">
-              <h2>Continue With:</h2>
+              <h2>Continua con:</h2>
           </div>
           <div class="modal-body">
               <div class="social-icons">
@@ -78,31 +77,31 @@
       </div>
   </div>
     <script>
-      // Get the modal and the close button
+      // Ottieni il modal e il pulsante di chiusura
       var modal = document.getElementById('myModal');
       var closeModalButton = document.getElementById('closeModal');
   
-      // Get all the vote buttons
+      // Ottieni tutti i pulsanti di voto
       var voteButtons = document.querySelectorAll('.vote-button');
   
-      // Function to open the modal
+      // Funzione per aprire il modal
       function openModal() {
           modal.style.display = 'block';
       }
   
-      // Function to close the modal
+      // Funzione per chiudere il modal
       function closeModal() {
           modal.style.display = 'none';
       }
   
-      // Event listeners for opening and closing the modal
+      // Event listener per l'apertura e la chiusura del modal
       voteButtons.forEach(function (button) {
           button.addEventListener('click', openModal);
       });
   
       closeModalButton.addEventListener('click', closeModal);
   
-      // Close the modal if the user clicks outside of it
+      // Chiudi il modal se l'utente fa clic all'esterno
       window.addEventListener('click', function (event) {
           if (event.target == modal) {
               closeModal();
